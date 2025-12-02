@@ -224,7 +224,7 @@ Generate images from text prompts using the Imagen model.
 use Gemini\Data\ImageConfig;
 use Gemini\Data\GenerationConfig;
 
-$imageConfig = new ImageConfig(aspectRatio: '16:9');
+$imageConfig = new ImageConfig(aspectRatio: '16:9', imageSize: '4k');
 $generationConfig = new GenerationConfig(imageConfig: $imageConfig);
 
 $response = $client->generativeModel(model: 'gemini-2.5-flash-image')
