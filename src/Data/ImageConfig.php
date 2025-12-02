@@ -19,7 +19,7 @@ final class ImageConfig implements Arrayable
      */
     public function __construct(
         public readonly string $aspectRatio,
-        public readonly ?string $imageSize,
+        public readonly ?string $imageSize = null,
     ) {}
 
     /**
